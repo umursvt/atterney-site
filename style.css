@@ -1,0 +1,98 @@
+
+*{
+    box-sizing:border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Ubuntu:wght@300&display=swap');
+
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.hero-image{
+    background-image: linear-gradient(#020a20a9,#020a20a9), url(avukat.png);
+    background-position:top;
+    background-size:120%;
+    height:50%;
+    position:relative;  
+}
+.hero-text{
+    font-size:20px;
+    color:white;
+    letter-spacing:2px;
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+/* liste */
+.col-md-4 ul{
+    list-style:none;
+    padding:0;
+}
+.col-md-4 ul li{
+    font-size:14px;
+    color:gray;
+    margin:10px 0;
+    font-weight:600;
+    letter-spacing:2px;
+}
+.col-md-4 ul li:hover{
+    color:#990033;
+    cursor:pointer;
+}
+h6{
+    letter-spacing:2px;
+    color:#990033;
+    font-weight:600;
+}
+.arama input{
+    margin:10px 0;
+    border:none;
+    outline:none;
+    border-bottom:0.8px solid gray;
+    padding:6px 5px;
+}
+.arama input:focus{
+    border-bottom:2px solid grey;
+}
+select{
+    padding:8px;
+    margin:10px 0;
+    font-weight:bold;
+    border-color:black red gray blue;
+}
+input[type=submit]{
+    background-color:white;
+    padding:8px 4px;
+    width:60px;
+    transition:0.2s;
+}
+input[type=submit]:hover{
+    background-color:blue;
+    color:white;
+    font-weight:600;
+}
+
+.harfler p{
+    margin-inline:5px;
+    font-weight:bold;
+    font-size:18px;
+    
+}
+.card img{
+    height:200px;
+}
+.col-md-4{
+    transition:0.5s;
+}@media screen and (max-width:992px){
+    .collapse{
+        background-image:linear-gradient(#020a20a9,#020a20a9);
+        padding:0 8px;
+        z-index:1;
+    }
+}
